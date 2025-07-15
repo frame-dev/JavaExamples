@@ -8,6 +8,10 @@ package ch.framedev.games.tiktaktoe;
  */
 public class TikTakToe {
 
+    /**
+     * The current turn number, starting from 0.
+     * It increments after each valid move.
+     */
     private int turn;
     private String player;
     private final String[][] board;

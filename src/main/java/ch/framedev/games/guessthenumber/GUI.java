@@ -1,13 +1,14 @@
 package ch.framedev.games.guessthenumber;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class GUI extends JFrame {
 
     private GuessTheNumber game;
-    private JButton guessButton;
-    private JTextField guessField;
-    private JTextArea resultArea;
+    private final JButton guessButton;
+    private final JTextField guessField;
+    private final JTextArea resultArea;
 
     public GUI() {
         setTitle("Guess The Number");
@@ -27,9 +28,9 @@ public class GUI extends JFrame {
         resultArea.setSize(250, 30);
         resultArea.setEditable(false);
 
-        guessField.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, 30));
-        guessButton.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, 30));
-        resetButton.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, 30));
+        guessField.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
+        guessButton.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
+        resetButton.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
         resultArea.setRows(6);
 
         guessButton.addActionListener(e -> {
