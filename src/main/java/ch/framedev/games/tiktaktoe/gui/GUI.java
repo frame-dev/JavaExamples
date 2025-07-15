@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class GUI extends JFrame {
 
-    TikTakToe tikTakToe;
+    private TikTakToe tikTakToe;
 
     public GUI() {
         setTitle("Tic Tac Toe");
